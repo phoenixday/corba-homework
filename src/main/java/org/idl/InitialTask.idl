@@ -1,0 +1,14 @@
+module tasks {
+    exception TaskException {
+        string message;
+    };
+
+    abstract interface AbstractTask {
+        string info();
+        AbstractTask next() raises(TaskException);
+    };
+
+    interface InitialTask {
+        AbstractTask init(in string email) raises(TaskException);
+    };
+};
