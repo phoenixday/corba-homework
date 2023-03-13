@@ -10,4 +10,5 @@ package org.idl.tasks;
 
 public interface InitialTask extends InitialTaskOperations, org.omg.CORBA.Object, org.omg.CORBA.portable.IDLEntity
 {
+
 } // interface InitialTask
