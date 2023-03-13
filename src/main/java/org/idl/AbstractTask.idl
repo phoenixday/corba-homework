@@ -1,0 +1,6 @@
+module tasks {
+    abstract interface AbstractTask {
+        string info();
+        AbstractTask next() raises(TaskException);
+    };
+};

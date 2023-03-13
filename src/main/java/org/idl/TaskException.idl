@@ -1,0 +1,5 @@
+module tasks {
+    exception TaskException {
+        string message;
+    };
+};
