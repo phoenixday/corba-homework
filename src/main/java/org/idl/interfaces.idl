@@ -11,4 +11,8 @@ module tasks {
     interface InitialTask {
         AbstractTask init(in string email) raises(TaskException);
     };
+
+    interface SimpleTask : AbstractTask {
+        boolean isReady();
+    };
 };
